@@ -13,7 +13,6 @@ class Solution:
                 ans.append(path)
                 continue
             for neighbor in adj[node]:
-                if neighbor not in path:
-                    queue.append(path + [neighbor])
+                queue.append(path + [neighbor])
         return ans
         
